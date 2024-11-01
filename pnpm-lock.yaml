@@ -27,8 +27,8 @@ importers:
         specifier: 4.15.9
         version: 4.15.9(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.6.2)
       astro-expressive-code:
-        specifier: ^0.37.0
-        version: 0.37.0(astro@4.15.9(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.6.2))
+        specifier: ^0.38.0
+        version: 0.38.0(astro@4.15.9(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.6.2))
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.1
@@ -517,17 +517,17 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@expressive-code/core@0.37.0':
-    resolution: {integrity: sha512-uCPAaQ//5RZeeKAN9cMyGH8YIm+h1Rldy34IWMbsCECrFVo86w+eR67jVWoQ2HNe0dSZ4XTdgJKYEScuVcy2Cw==}
+  '@expressive-code/core@0.38.0':
+    resolution: {integrity: sha512-mpqXI69CFkkYES03mY5EQq/8WrEXohWq5RpFmjbOJjaW8yUOPQfm1KNBOirTBTjJekn3TOsXE82l8MFwKjTC7Q==}
 
-  '@expressive-code/plugin-frames@0.37.0':
-    resolution: {integrity: sha512-jqlds/LptU8+FYxD1Uiu1vULvC904TlcOote8wCgn4gdae2qmCj67G9C1b1j3MAaerblRQg4uNbUxeitRFYs6A==}
+  '@expressive-code/plugin-frames@0.38.0':
+    resolution: {integrity: sha512-EkZyv/H5+qxqSiqJjMXoMfG0BCGa8stXMdBu38Sf4joNmo5SxxSaTG2URXeWZqUUIChX+tWx5xprcUfbpsmY5g==}
 
-  '@expressive-code/plugin-shiki@0.37.0':
-    resolution: {integrity: sha512-0g9v7OBu3rNS7EOyam1G6+WE1siWBKteagV0917yooIFlOlcJ/pvV/nClSEwJgFdumwHK4sDj4ov4Y4p0tDn1w==}
+  '@expressive-code/plugin-shiki@0.38.0':
+    resolution: {integrity: sha512-n/sNSECIk+i6hW0KLv3VBNdd0ZGm0e/9ip/qjxKcaRtsZ0fPxYOBkXcSHcF87/v1kHlFRT91SxcZVXBc6FcJqw==}
 
-  '@expressive-code/plugin-text-markers@0.37.0':
-    resolution: {integrity: sha512-iDwB7iYga7hIyODR0wGVP2yo10H3Ncknif2diZvc/w9Mb/RvStEtCXRoqs3jgQlS3dhTGBXzTorFZx36vNy4rQ==}
+  '@expressive-code/plugin-text-markers@0.38.0':
+    resolution: {integrity: sha512-qpNnUJnzMqQ1xgOxRVn7BP74SPuBljARl72Ven2496jvpdrsZ3meHJogMJvBeQszA7Za+hz33IR7u08OgKStpQ==}
 
   '@iconify-json/mdi@1.2.0':
     resolution: {integrity: sha512-E9/3l5Syg3wfuarorFodhn4s8YorxhH3U3U20LaNBNiqw1kFNIDWhF6HymuzAD35k7RH0OBasJ+ZUyFtVVV6eg==}
@@ -886,17 +886,32 @@ packages:
   '@shikijs/core@1.20.0':
     resolution: {integrity: sha512-KlO3iE0THzSdYkzDFugt8SHe6FR3qNYTkmpbdW1d6xo8juQkMjybxAw/cBi2npL2eb2F4PbbnSs5Z9tDusfvyg==}
 
+  '@shikijs/core@1.22.2':
+    resolution: {integrity: sha512-bvIQcd8BEeR1yFvOYv6HDiyta2FFVePbzeowf5pPS1avczrPK+cjmaxxh0nx5QzbON7+Sv0sQfQVciO7bN72sg==}
+
   '@shikijs/engine-javascript@1.20.0':
     resolution: {integrity: sha512-ZUMo758uduM0Tfgzi/kd+0IKMbNdumCxxWjY36uf1DIs2Qyg9HIq3vA1Wfa/vc6HE7tHWFpANRi3mv7UzJ68MQ==}
+
+  '@shikijs/engine-javascript@1.22.2':
+    resolution: {integrity: sha512-iOvql09ql6m+3d1vtvP8fLCVCK7BQD1pJFmHIECsujB0V32BJ0Ab6hxk1ewVSMFA58FI0pR2Had9BKZdyQrxTw==}
 
   '@shikijs/engine-oniguruma@1.20.0':
     resolution: {integrity: sha512-MQ40WkVTZk7by33ces4PGK6XNFSo6PYvKTSAr2kTWdRNhFmOcnaX+1XzvFwB26eySXR7U74t91czZ1qJkEgxTA==}
 
+  '@shikijs/engine-oniguruma@1.22.2':
+    resolution: {integrity: sha512-GIZPAGzQOy56mGvWMoZRPggn0dTlBf1gutV5TdceLCZlFNqWmuc7u+CzD0Gd9vQUTgLbrt0KLzz6FNprqYAxlA==}
+
   '@shikijs/types@1.20.0':
     resolution: {integrity: sha512-y+EaDvU2K6/GaXOKXxJaGnr1XtmZMF7MfS0pSEDdxEq66gCtKsLwQvVwoQFdp7R7dLlNAro3ijEE19sMZ0pzqg==}
 
+  '@shikijs/types@1.22.2':
+    resolution: {integrity: sha512-NCWDa6LGZqTuzjsGfXOBWfjS/fDIbDdmVDug+7ykVe1IKT4c1gakrvlfFYp5NhAXH/lyqLM8wsAPo5wNy73Feg==}
+
   '@shikijs/vscode-textmate@9.2.2':
     resolution: {integrity: sha512-TMp15K+GGYrWlZM8+Lnj9EaHEFmOen0WJBrfa17hF7taDOYthuPPV0GWzfd/9iMij0akS/8Yw2ikquH7uVi/fg==}
+
+  '@shikijs/vscode-textmate@9.3.0':
+    resolution: {integrity: sha512-jn7/7ky30idSkd/O5yDBfAnVt+JJpepofP/POZ1iMOxK59cOfqIgg/Dj0eFsjOTMw+4ycJN0uhZH/Eb0bs/EUA==}
 
   '@shuding/opentype.js@1.4.0-beta.0':
     resolution: {integrity: sha512-3NgmNyH3l/Hv6EvsWJbsvpcpUba6R8IREQ83nH83cyakCw7uM1arZKNfHwv1Wz6jgqrF/j4x5ELvR6PnK9nTcA==}
@@ -1071,8 +1086,8 @@ packages:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
 
-  astro-expressive-code@0.37.0:
-    resolution: {integrity: sha512-ElWiCQHVQh5+l8fvGRgctvxEw63G/KEZgRi60ApPsHK6NsexgPZENk3bnHzbCpigCgh/L9k/yJ+3zOyuhoPqhQ==}
+  astro-expressive-code@0.38.0:
+    resolution: {integrity: sha512-9e+e4R4o91d0XdhEnhGP1GP2wZVl9UqSKFfd7i31rrJEpOb37J1pORVmo925dwvvlTu1KignK5SJyEzRfSYwmA==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
@@ -1550,8 +1565,8 @@ packages:
     resolution: {integrity: sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==}
     engines: {node: '>=6'}
 
-  expressive-code@0.37.0:
-    resolution: {integrity: sha512-UnfkF69UpKAa2ytyNNxBifSe723wL4DOK1dqkoK0PAYaO8mo9tXsyn/SMNMVvAkZNeJcJOttYfs957a9Uaqo6A==}
+  expressive-code@0.38.0:
+    resolution: {integrity: sha512-2piHn2SqqpdngPUWr351sisVUlyNGD+rTkWoXJs2LXmDCEeYjjyA8DUDPT/oCUEyuQuPDm4XiQ3b5o6ZAy/5Kg==}
 
   extend-shallow@2.0.1:
     resolution: {integrity: sha512-zCnTtlxNoAiDc3gqY2aYAWFx7XWWiasuF2K8Me5WbN8otHKTUKBwjPtNpRs/rbUZm7KxWAaNj7P1a/p52GbVug==}
@@ -2740,8 +2755,8 @@ packages:
   regex@4.3.2:
     resolution: {integrity: sha512-kK/AA3A9K6q2js89+VMymcboLOlF5lZRCYJv3gzszXFHBr6kO6qLGzbm+UIugBEV8SMMKCTR59txoY6ctRHYVw==}
 
-  rehype-expressive-code@0.37.0:
-    resolution: {integrity: sha512-5dUjqNkhw0gB1pkkjc11jWdvQFGMYcrzCrUGx7p8TiHc5IwbrzBWXXADNEP2KrtAlUIy5yRmkkgGD5az1owq3Q==}
+  rehype-expressive-code@0.38.0:
+    resolution: {integrity: sha512-01Fsn7nKLIOdL9Y5UfMx0bjI/zJRi3HGKxnxj/b1t8n1RphQaN84d8pF17+rIsjrhlkkyZBJ23gli4Ozf3T60w==}
 
   rehype-external-links@3.0.0:
     resolution: {integrity: sha512-yp+e5N9V3C6bwBeAC4n796kc86M4gJCdlVhiMTxIrJG5UHDMh+PJANf9heqORJbt1nrCbDwIlAZKjANIaVBbvw==}
@@ -2882,6 +2897,9 @@ packages:
 
   shiki@1.20.0:
     resolution: {integrity: sha512-MZJJ1PCFsQB1Piq+25wiz0a75yUv8Q3/fzy7SzRx5ONdjdtGdyiKwYn8vb/FnK5kjS0voWGnPpjG16POauUR+g==}
+
+  shiki@1.22.2:
+    resolution: {integrity: sha512-3IZau0NdGKXhH2bBlUk4w1IHNxPh6A5B2sUpyY+8utLu2j/h1QpFkAaUA1bAMxOWWGtTWcAh531vnS4NJKS/lA==}
 
   signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
@@ -3833,7 +3851,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@expressive-code/core@0.37.0':
+  '@expressive-code/core@0.38.0':
     dependencies:
       '@ctrl/tinycolor': 4.1.0
       hast-util-select: 6.0.2
@@ -3845,18 +3863,18 @@ snapshots:
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
 
-  '@expressive-code/plugin-frames@0.37.0':
+  '@expressive-code/plugin-frames@0.38.0':
     dependencies:
-      '@expressive-code/core': 0.37.0
+      '@expressive-code/core': 0.38.0
 
-  '@expressive-code/plugin-shiki@0.37.0':
+  '@expressive-code/plugin-shiki@0.38.0':
     dependencies:
-      '@expressive-code/core': 0.37.0
-      shiki: 1.20.0
+      '@expressive-code/core': 0.38.0
+      shiki: 1.22.2
 
-  '@expressive-code/plugin-text-markers@0.37.0':
+  '@expressive-code/plugin-text-markers@0.38.0':
     dependencies:
-      '@expressive-code/core': 0.37.0
+      '@expressive-code/core': 0.38.0
 
   '@iconify-json/mdi@1.2.0':
     dependencies:
@@ -4172,10 +4190,25 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.3
 
+  '@shikijs/core@1.22.2':
+    dependencies:
+      '@shikijs/engine-javascript': 1.22.2
+      '@shikijs/engine-oniguruma': 1.22.2
+      '@shikijs/types': 1.22.2
+      '@shikijs/vscode-textmate': 9.3.0
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.3
+
   '@shikijs/engine-javascript@1.20.0':
     dependencies:
       '@shikijs/types': 1.20.0
       '@shikijs/vscode-textmate': 9.2.2
+      oniguruma-to-js: 0.4.3
+
+  '@shikijs/engine-javascript@1.22.2':
+    dependencies:
+      '@shikijs/types': 1.22.2
+      '@shikijs/vscode-textmate': 9.3.0
       oniguruma-to-js: 0.4.3
 
   '@shikijs/engine-oniguruma@1.20.0':
@@ -4183,12 +4216,24 @@ snapshots:
       '@shikijs/types': 1.20.0
       '@shikijs/vscode-textmate': 9.2.2
 
+  '@shikijs/engine-oniguruma@1.22.2':
+    dependencies:
+      '@shikijs/types': 1.22.2
+      '@shikijs/vscode-textmate': 9.3.0
+
   '@shikijs/types@1.20.0':
     dependencies:
       '@shikijs/vscode-textmate': 9.2.2
       '@types/hast': 3.0.4
 
+  '@shikijs/types@1.22.2':
+    dependencies:
+      '@shikijs/vscode-textmate': 9.3.0
+      '@types/hast': 3.0.4
+
   '@shikijs/vscode-textmate@9.2.2': {}
+
+  '@shikijs/vscode-textmate@9.3.0': {}
 
   '@shuding/opentype.js@1.4.0-beta.0':
     dependencies:
@@ -4392,10 +4437,10 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro-expressive-code@0.37.0(astro@4.15.9(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.6.2)):
+  astro-expressive-code@0.38.0(astro@4.15.9(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.6.2)):
     dependencies:
       astro: 4.15.9(@types/node@22.4.2)(rollup@4.21.0)(typescript@5.6.2)
-      rehype-expressive-code: 0.37.0
+      rehype-expressive-code: 0.38.0
 
   astro-icon@1.1.1:
     dependencies:
@@ -4991,12 +5036,12 @@ snapshots:
 
   expand-template@2.0.3: {}
 
-  expressive-code@0.37.0:
+  expressive-code@0.38.0:
     dependencies:
-      '@expressive-code/core': 0.37.0
-      '@expressive-code/plugin-frames': 0.37.0
-      '@expressive-code/plugin-shiki': 0.37.0
-      '@expressive-code/plugin-text-markers': 0.37.0
+      '@expressive-code/core': 0.38.0
+      '@expressive-code/plugin-frames': 0.38.0
+      '@expressive-code/plugin-shiki': 0.38.0
+      '@expressive-code/plugin-text-markers': 0.38.0
 
   extend-shallow@2.0.1:
     dependencies:
@@ -6463,9 +6508,9 @@ snapshots:
 
   regex@4.3.2: {}
 
-  rehype-expressive-code@0.37.0:
+  rehype-expressive-code@0.38.0:
     dependencies:
-      expressive-code: 0.37.0
+      expressive-code: 0.38.0
 
   rehype-external-links@3.0.0:
     dependencies:
@@ -6725,6 +6770,15 @@ snapshots:
       '@shikijs/engine-oniguruma': 1.20.0
       '@shikijs/types': 1.20.0
       '@shikijs/vscode-textmate': 9.2.2
+      '@types/hast': 3.0.4
+
+  shiki@1.22.2:
+    dependencies:
+      '@shikijs/core': 1.22.2
+      '@shikijs/engine-javascript': 1.22.2
+      '@shikijs/engine-oniguruma': 1.22.2
+      '@shikijs/types': 1.22.2
+      '@shikijs/vscode-textmate': 9.3.0
       '@types/hast': 3.0.4
 
   signal-exit@4.1.0: {}
