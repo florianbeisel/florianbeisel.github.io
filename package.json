@@ -35,11 +35,11 @@
 		"sharp": "^0.33.5",
 		"unified": "^11.0.5",
 		"unist-util-visit": "^5.0.0",
-		"@astrojs/check": "^0.9.3",
+		"@astrojs/check": "^0.9.4",
 		"typescript": "^5.6.2"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.3",
+		"@astrojs/check": "^0.9.4",
 		"@biomejs/biome": "^1.9.4",
 		"@iconify-json/mdi": "^1.2.3",
 		"@pagefind/default-ui": "^1.2.0",
