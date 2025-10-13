@@ -1,11 +1,15 @@
 ---
+import { Image } from "astro:assets";
+import aboutImg from "@/assets/about-astro.png";
+import PageLayout from "@/layouts/Base.astro";
+
 const _meta = {
 	description: "I'm a starter theme for Astro.build",
 	title: "About",
 };
 ---
 
-<PageLayout meta={meta}>
+<PageLayout meta={_meta}>
 	<h1 class="title mb-6">About</h1>
 	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
 		<section aria-label="About me">

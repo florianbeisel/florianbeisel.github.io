@@ -1,5 +1,8 @@
 ---
+import PostPreview from "@/components/blog/PostPreview.astro";
+import SocialList from "@/components/SocialList.astro";
 import { getAllPosts, sortMDByDate } from "@/data/post";
+import PageLayout from "@/layouts/Base.astro";
 
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
@@ -27,7 +30,7 @@ const _cactusTech: { desc: string; href: string; title: string }[] = [
 		<h2 class="title mb-4 text-xl">Posts</h2>
 		<ul class="space-y-4">
 			{
-				allPostsByDate.map((p) => (
+				_allPostsByDate.map((p) => (
 					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
 						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
 						<PostPreview post={p} />
@@ -40,7 +43,7 @@ const _cactusTech: { desc: string; href: string; title: string }[] = [
 		<h2 class="title mb-4 text-xl">Technologies</h2>
 		<dl class="space-y-4">
 			{
-				cactusTech.map(({ desc, href, title }) => (
+				_cactusTech.map(({ desc, href, title }) => (
 					<div class="flex flex-col gap-2 sm:flex-row">
 						<dt>
 							<span class="flex">

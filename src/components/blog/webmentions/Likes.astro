@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import type { WebmentionsChildren } from "@/types";
 
 interface Props {
@@ -21,9 +22,9 @@ const _likesToShow = likes
 				<strong>{likes.length}</strong>
 				{likes.length > 1 ? " People" : " Person"} liked this
 			</p>
-			{!!likesToShow.length && (
+			{!!_likesToShow.length && (
 				<ul class="flex list-none flex-wrap overflow-hidden ps-2" role="list">
-					{likesToShow.map((like) => (
+					{_likesToShow.map((like) => (
 						<li class="-ms-2">
 							<a
 								class="not-prose relative inline-block overflow-hidden rounded-full outline-none ring-2 ring-textColor hover:z-10 hover:ring-4 hover:ring-link focus-visible:z-10 focus-visible:ring-4 focus-visible:ring-link"

@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/Gallery.astro";
 import { getAlbumImages } from "@/utils/album";
 
 export async function getStaticPaths() {
@@ -31,7 +33,7 @@ const _images = await getAlbumImages(album.id);
 			<div class="mt-4">
 				<div class="container mx-auto my-8 sm:columns-2 md:columns-2 lg:columns-2 xl:columns-2">
 					{
-						images.map((image) => (
+						_images.map((image) => (
 							<Image
 								src={image}
 								alt={`Image from ${album.data.title} album`}
