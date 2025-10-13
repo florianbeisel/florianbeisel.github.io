@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-import aboutImg from "@/assets/about-astro.png";
 import PageLayout from "@/layouts/Base.astro";
 
 const _meta = {
@@ -108,7 +106,13 @@ const _meta = {
 					>
 				</li>
 			</ul>
-			<Image class="rounded-lg" src={aboutImg} alt="Florian's photo" width={400} height={400} />
+			<img
+				class="rounded-lg"
+				src="/about-pacey.png"
+				alt="Florian's photo"
+				width={400}
+				height={400}
+			/>
 		</aside>
 	</div>
 </PageLayout>
