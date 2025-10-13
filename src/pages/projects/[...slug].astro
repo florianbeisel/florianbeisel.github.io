@@ -1,7 +1,6 @@
 ---
-import { getAllProjects } from "@/data/project";
-import ProjectLayout from "@/layouts/Project.astro";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getAllProjects } from "@/data/project";
 
 // if you're using an adaptor in SSR mode, getStaticPaths wont work -> https://docs.astro.build/en/guides/routing/#modifying-the-slug-example-for-ssr
 export const getStaticPaths = (async () => {

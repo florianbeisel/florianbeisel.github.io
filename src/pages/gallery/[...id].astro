@@ -1,7 +1,5 @@
 ---
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import PageLayout from "@/layouts/Gallery.astro";
 import { getAlbumImages } from "@/utils/album";
 
 export async function getStaticPaths() {
@@ -22,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { album } = Astro.props;
-const images = await getAlbumImages(album.id);
+const _images = await getAlbumImages(album.id);
 ---
 
 <PageLayout meta={{ title: "Gallery" }}>

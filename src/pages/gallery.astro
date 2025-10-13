@@ -1,9 +1,7 @@
 ---
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import PageLayout from "@/layouts/Gallery.astro";
 
-const album = await getCollection("album");
+const _album = await getCollection("album");
 ---
 
 <PageLayout meta={{ title: "Gallery" }}>

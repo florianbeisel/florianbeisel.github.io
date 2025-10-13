@@ -1,12 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
-import Masthead from "@/components/blog/Masthead.astro";
-import TOC from "@/components/blog/TOC.astro";
-import WebMentions from "@/components/blog/webmentions/index.astro";
-
-import BaseLayout from "./Base.astro";
-
 interface Props {
 	post: CollectionEntry<"post">;
 }
@@ -16,8 +10,8 @@ const {
 	data: { description, ogImage, publishDate, title, updatedDate },
 	slug,
 } = post;
-const socialImage = ogImage ?? `/og-image/${slug}.png`;
-const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
+const _socialImage = ogImage ?? `/og-image/${slug}.png`;
+const _articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
 const { headings } = await post.render();
 ---
 

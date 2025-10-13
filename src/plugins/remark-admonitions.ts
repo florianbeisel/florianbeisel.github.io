@@ -1,5 +1,4 @@
-import type { AdmonitionType } from "@/types";
-import { type Properties, h as _h } from "hastscript";
+import { h as _h, type Properties } from "hastscript";
 import type { Node, Paragraph as P, Parent, PhrasingContent, Root } from "mdast";
 import type { Directives, LeafDirective, TextDirective } from "mdast-util-directive";
 import { directiveToMarkdown } from "mdast-util-directive";
@@ -7,6 +6,7 @@ import { toMarkdown } from "mdast-util-to-markdown";
 import { toString as mdastToString } from "mdast-util-to-string";
 import type { Plugin } from "unified";
 import { visit } from "unist-util-visit";
+import type { AdmonitionType } from "@/types";
 
 // Supported admonition types
 const Admonitions = new Set<AdmonitionType>(["tip", "note", "important", "caution", "warning"]);
@@ -49,7 +49,7 @@ function transformUnhandledDirective(
 }
 
 /** From Astro Starlight: Function that generates an mdast HTML tree ready for conversion to HTML by rehype. */
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+// biome-ignore lint/suspicious/noExplicitAny: any[] is needed for flexible children parameter
 function h(el: string, attrs: Properties = {}, children: any[] = []): P {
 	const { properties, tagName } = _h(el, attrs);
 	return {

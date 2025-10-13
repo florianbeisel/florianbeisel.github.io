@@ -1,14 +1,11 @@
 ---
-import SocialList from "@/components/SocialList.astro";
-import PostPreview from "@/components/blog/PostPreview.astro";
 import { getAllPosts, sortMDByDate } from "@/data/post";
-import PageLayout from "@/layouts/Base.astro";
 
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+const _allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
-const cactusTech: { desc: string; href: string; title: string }[] = [
+const _cactusTech: { desc: string; href: string; title: string }[] = [
 	{
 		desc: "Build fast websites, faster.",
 		href: "https://astro.build",

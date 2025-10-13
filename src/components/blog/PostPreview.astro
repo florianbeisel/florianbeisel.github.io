@@ -1,8 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getPostSortDate } from "@/data/post";
 import type { HTMLTag, Polymorphic } from "astro/types";
-import FormattedDate from "../FormattedDate.astro";
+import { getPostSortDate } from "@/data/post";
 
 type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
 	post: CollectionEntry<"post">;
@@ -10,7 +9,7 @@ type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
 };
 
 const { as: Tag = "div", post, withDesc = false } = Astro.props;
-const postDate = getPostSortDate(post);
+const _postDate = getPostSortDate(post);
 ---
 
 <FormattedDate class="min-w-[120px] text-gray-600 dark:text-gray-400" date={postDate} />

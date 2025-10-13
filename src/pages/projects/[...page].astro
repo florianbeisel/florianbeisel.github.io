@@ -1,10 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Pagination from "@/components/Paginator.astro";
-import ProjectPreview from "@/components/project/ProjectPreview.astro";
-import { getAllProjects, getUniqueTags, groupProjectsByYear, sortMDByDate } from "@/data/project";
-import PageLayout from "@/layouts/Base.astro";
 import type { GetStaticPaths, Page } from "astro";
+import { getAllProjects, getUniqueTags, groupProjectsByYear, sortMDByDate } from "@/data/project";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const MAX_POSTS_PER_PAGE = 10;
@@ -21,12 +18,12 @@ interface Props {
 
 const { page, uniqueTags } = Astro.props;
 
-const meta = {
+const _meta = {
 	description: "Read my collection of posts and the things that interest me",
 	title: "Posts",
 };
 
-const paginationProps = {
+const _paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
 			text: "← Previous Page",
@@ -42,7 +39,7 @@ const paginationProps = {
 };
 
 const groupedByYear = groupProjectsByYear(page.data);
-const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
+const _descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 ---
 
 <PageLayout meta={meta}>
