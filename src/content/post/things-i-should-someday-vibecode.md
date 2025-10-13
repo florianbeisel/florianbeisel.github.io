@@ -42,7 +42,7 @@ The beauty of vibe coding lies in its lack of pressure. These projects don't hav
 
 *This list will grow, shrink, and evolve as my interests change. That's the whole point—it's a living document of curiosity, not a rigid roadmap.*
 
-*Last updated: March 2024*
+*Last updated: 13.10.2025*
 
 ---
 
