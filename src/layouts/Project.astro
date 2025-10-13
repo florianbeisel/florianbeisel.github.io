@@ -1,10 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
-
 import TOC from "@/components/blog/TOC.astro";
 import WebMentions from "@/components/blog/webmentions/index.astro";
 import Masthead from "@/components/project/Masthead.astro";
-
 import BaseLayout from "./Base.astro";
 
 interface Props {
@@ -16,12 +14,12 @@ const {
 	data: { description, ogImage, publishDate, title, updatedDate },
 	slug,
 } = project;
-const socialImage = ogImage ?? `/og-image/${slug}.png`;
-const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
+const _socialImage = ogImage ?? `/og-image/${slug}.png`;
+const _articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
 const { headings } = await project.render();
 ---
 
-<BaseLayout meta={{ articleDate, description, ogImage: socialImage, title }}>
+<BaseLayout meta={{ articleDate: _articleDate, description, ogImage: _socialImage, title }}>
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{!!headings.length && <TOC headings={headings} />}
 		<article class="flex-grow break-words" data-pagefind-body>

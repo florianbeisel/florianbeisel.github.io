@@ -1,7 +1,7 @@
 ---
 import { menuLinks, siteConfig } from "@/site-config";
 
-const year = new Date().getFullYear();
+const _year = new Date().getFullYear();
 ---
 
 <footer
@@ -9,7 +9,7 @@ const year = new Date().getFullYear();
 >
 	<div class="me-0 sm:me-4">
 		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">&nbsp;🚀&nbsp;Astro Cactus</span>
+		{_year}.<span class="inline-block">&nbsp;🚀&nbsp;Astro Cactus</span>
 	</div>
 	<nav
 		aria-label="More on this site"

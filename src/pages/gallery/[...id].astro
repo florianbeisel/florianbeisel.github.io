@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 const { album } = Astro.props;
-const images = await getAlbumImages(album.id);
+const _images = await getAlbumImages(album.id);
 ---
 
 <PageLayout meta={{ title: "Gallery" }}>
@@ -33,7 +33,7 @@ const images = await getAlbumImages(album.id);
 			<div class="mt-4">
 				<div class="container mx-auto my-8 sm:columns-2 md:columns-2 lg:columns-2 xl:columns-2">
 					{
-						images.map((image) => (
+						_images.map((image) => (
 							<Image
 								src={image}
 								alt={`Image from ${album.data.title} album`}

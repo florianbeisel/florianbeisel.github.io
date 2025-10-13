@@ -1,10 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Pagination from "@/components/Paginator.astro";
+import type { GetStaticPaths, Page } from "astro";
+import Paginator from "@/components/Paginator.astro";
 import ProjectPreview from "@/components/project/ProjectPreview.astro";
 import { getAllProjects, getUniqueTags, groupProjectsByYear, sortMDByDate } from "@/data/project";
 import PageLayout from "@/layouts/Base.astro";
-import type { GetStaticPaths, Page } from "astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const MAX_POSTS_PER_PAGE = 10;
@@ -21,12 +21,12 @@ interface Props {
 
 const { page, uniqueTags } = Astro.props;
 
-const meta = {
+const _meta = {
 	description: "Read my collection of posts and the things that interest me",
 	title: "Posts",
 };
 
-const paginationProps = {
+const _paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
 			text: "← Previous Page",
@@ -42,15 +42,15 @@ const paginationProps = {
 };
 
 const groupedByYear = groupProjectsByYear(page.data);
-const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
+const _descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 ---
 
-<PageLayout meta={meta}>
+<PageLayout meta={_meta}>
 	<h1 class="title mb-6">Projects</h1>
 	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
 		<section aria-label="Blog post list">
 			{
-				descYearKeys.map((yearKey) => (
+				_descYearKeys.map((yearKey) => (
 					<>
 						<h2 class="title text-lg">{yearKey}</h2>
 						<ul class="mb-8 mt-6 space-y-8 text-start">
@@ -63,7 +63,7 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 					</>
 				))
 			}
-			<Pagination {...paginationProps} />
+			<Paginator {..._paginationProps} />
 		</section>
 		{
 			!!uniqueTags.length && (
