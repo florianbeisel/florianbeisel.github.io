@@ -2,6 +2,7 @@
 import { menuLinks } from "@/site-config";
 import Search from "../Search.astro";
 import ThemeToggle from "../ThemeToggle.astro";
+import paceyLogo from "@/assets/pacey-logo.png";
 
 const _url = new URL(Astro.request.url);
 ---
@@ -16,7 +17,7 @@ const _url = new URL(Astro.request.url);
 			<img
 				alt="Pacey Logo"
 				class="me-3 h-[35px] w-[30px] sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-[70px] sm:w-[60px]"
-				src="/src/assets/pacey-logo.png"
+				src={paceyLogo.src}
 			/>
 			<span class="text-xl font-bold sm:ms-8 sm:text-2xl">me.pacey.me</span>
 		</a>
